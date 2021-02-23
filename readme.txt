@@ -1,1 +1,11 @@
-kdflad
+            $config['source_image'] = 'asset/foto_berita/'.$hasil['file_name'];
+            $config['wm_text'] = 'phpmu.com';
+            $config['wm_type'] = 'text';
+            $config['wm_font_path'] = './system/fonts/texb.ttf';
+            $config['wm_font_size'] = '26';
+            $config['wm_font_color'] = 'ffffff';
+            $config['wm_vrt_alignment'] = 'middle';
+            $config['wm_hor_alignment'] = 'center';
+            $config['wm_padding'] = '20';
+            $this->load->library('image_lib',$config);
+            $this->image_lib->watermark();
